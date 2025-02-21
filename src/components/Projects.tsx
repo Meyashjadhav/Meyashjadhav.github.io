@@ -1,16 +1,25 @@
-import { motion } from 'framer-motion';
-import { Github, ExternalLink } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Github, ExternalLink } from "lucide-react";
 
 export default function Projects() {
   const projects = [
     {
       title: "FARM CLICK",
-      description: "An innovative Android application designed for farmers to rent farm equipment. Implements geofencing for location-based services and provides a seamless platform for agricultural equipment sharing.",
-      technologies: ["Java", "XML", "Firebase", "JMeter", "Geofencing API"],
-      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&q=80&w=1000",
-      github: "https://github.com/Meyashjadhav/farm-click",
-      demo: "#"
-    }
+      description:
+        "An innovative Android application designed for farmers to rent farm equipment. Implements geofencing for location-based services and provides a seamless platform for agricultural equipment sharing.",
+      technologies: [
+        "Java",
+        "XML",
+        "Firebase",
+        "JMeter",
+        "Geofencing API",
+        "Android Studio",
+      ],
+      image:
+        "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&q=80&w=1000",
+      github: "https://github.com/Meyashjadhav/Rental-App",
+      demo: "#",
+    },
   ];
 
   return (
@@ -23,7 +32,9 @@ export default function Projects() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Projects</h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            Projects
+          </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
         </motion.div>
 
@@ -47,8 +58,12 @@ export default function Projects() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-8 flex flex-col justify-center">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{project.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-6">{project.description}</p>
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-6">
+                    {project.description}
+                  </p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, techIndex) => (
                       <span
