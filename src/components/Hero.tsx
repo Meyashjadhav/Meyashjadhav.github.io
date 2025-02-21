@@ -133,12 +133,12 @@ export default function Hero() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Turning ideas into reality through code and creativity
+              Turning Ideas into Innovation through code and creativity
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
               Passionate Automation Engineer specializing in Selenium, JMeter,
-              and CI/CD pipelines. Currently crafting robust test automation
-              solutions for enterprise applications.
+              Virtuoso and CI/CD pipelines. Currently crafting robust test
+              automation solutions for Enterprise Applications.
             </p>
           </motion.div>
 
