@@ -1,26 +1,30 @@
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { useState } from 'react';
+import { motion } from "framer-motion";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { useState } from "react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:yashodip.yj@gmail.com?subject=Contact from Portfolio - ${formData.name}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:yashodip.yj@gmail.com?subject=Contact from Portfolio - ${
+      formData.name
+    }&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     )}`;
     window.location.href = mailtoLink;
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.id]: e.target.value
+      [e.target.id]: e.target.value,
     });
   };
 
@@ -34,7 +38,9 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            Get In Touch
+          </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
         </motion.div>
 
@@ -47,28 +53,36 @@ export default function Contact() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
+                Contact Information
+              </h3>
               <div className="space-y-4">
-                <motion.div 
+                <motion.div
                   whileHover={{ x: 10 }}
                   className="flex items-center space-x-4"
                 >
                   <Mail className="w-6 h-6 text-primary" />
-                  <p className="text-gray-600 dark:text-gray-300">yashodip.yj@gmail.com</p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    yashodip.yj@gmail.com
+                  </p>
                 </motion.div>
-                <motion.div 
+                <motion.div
                   whileHover={{ x: 10 }}
                   className="flex items-center space-x-4"
                 >
                   <Phone className="w-6 h-6 text-primary" />
-                  <p className="text-gray-600 dark:text-gray-300">+91 XXXXXXXXXX</p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    +91 9767743904
+                  </p>
                 </motion.div>
-                <motion.div 
+                <motion.div
                   whileHover={{ x: 10 }}
                   className="flex items-center space-x-4"
                 >
                   <MapPin className="w-6 h-6 text-primary" />
-                  <p className="text-gray-600 dark:text-gray-300">Pune, Maharashtra, India</p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Pune, Maharashtra, India
+                  </p>
                 </motion.div>
               </div>
             </div>
@@ -94,7 +108,10 @@ export default function Contact() {
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
                   Name
                 </label>
                 <input
@@ -107,7 +124,10 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
                   Email
                 </label>
                 <input
@@ -120,7 +140,10 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
                   Message
                 </label>
                 <textarea
