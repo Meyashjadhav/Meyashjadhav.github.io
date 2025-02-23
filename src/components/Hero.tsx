@@ -119,6 +119,9 @@ export default function Hero() {
               <span className="text-primary">
                 <TypeAnimation
                   sequence={[
+                    "Yashodip Jadhav",
+                    2000,
+
                     "an Automation Tester",
                     2000,
                     "a Developer",
