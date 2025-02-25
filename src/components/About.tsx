@@ -90,7 +90,7 @@ export default function About() {
             </div>
 
             <div className="flex items-start space-x-4">
-              <Briefcase className="w-6 h-6 text-primary mt-1" />
+              <Briefcase className="w-12 h-12 text-primary mt-1" />
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                   Experience
