@@ -152,14 +152,16 @@ export default function Hero() {
             className="flex flex-col items-center space-y-6"
           >
             <div className="flex justify-center space-x-6">
-              <a
+              <motion.a
+                whileHover={{ scale: 1.1, y: -5 }}
+                whileTap={{ scale: 0.95 }}
                 href="https://github.com/Meyashjadhav"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-[#24292e] hover:bg-[#2b3137] text-white transition-colors z-10"
               >
                 <Github className="w-6 h-6" />
-              </a>
+              </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1, y: -5 }}
                 whileTap={{ scale: 0.95 }}
