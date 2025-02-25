@@ -121,10 +121,9 @@ export default function Hero() {
                   sequence={[
                     "Yashodip Jadhav",
                     2000,
-
-                    "an Automation Tester",
-                    2000,
                     "a Developer",
+                    2000,
+                    "an Automation Tester",
                     2000,
                     "a QA Engineer",
                     2000,
@@ -136,12 +135,14 @@ export default function Hero() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Turning Ideas into Innovation through code and creativity
+              "Turning Ideas into Innovation through code and creativity"
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-              Passionate Automation Engineer specializing in Selenium, JMeter,
-              Virtuoso and CI/CD pipelines. Currently crafting robust test
-              automation solutions for Enterprise Applications.
+              "Proficient Automation Engineer with expertise in Selenium,
+              JMeter, Virtuoso, Regression Testing, and CI/CD pipelines.
+              Passionate about creating efficient, scalable automation solutions
+              that enhance the performance and quality of Enterprise
+              Applications"
             </p>
           </motion.div>
 
