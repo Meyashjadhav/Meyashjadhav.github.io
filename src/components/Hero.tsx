@@ -138,11 +138,10 @@ export default function Hero() {
               "Turning Ideas into Innovation through code and creativity"
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-              "Proficient Automation Engineer with expertise in Selenium,
-              JMeter, Virtuoso, Regression Testing, and CI/CD pipelines.
-              Passionate about creating efficient, scalable automation solutions
-              that enhance the performance and quality of Enterprise
-              Applications"
+              "Dynamic Automation Engineer with expertise in Selenium, JMeter,
+              Virtuoso, Regression Testing, and CI/CD pipelines. Passionate
+              about creating efficient, scalable automation solutions that
+              enhance the performance and quality of Enterprise Applications"
             </p>
           </motion.div>
 
