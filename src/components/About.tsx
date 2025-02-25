@@ -1,19 +1,51 @@
 import { motion } from "framer-motion";
-import { Award, BookOpen, Briefcase, Code } from "lucide-react";
+import {
+  Award,
+  BookOpen,
+  Briefcase,
+  Code,
+  TestTube,
+  Bot,
+  Coffee,
+  Cpu,
+  GitBranch,
+  Server,
+  Gauge,
+  Rocket,
+  Webhook,
+  Cloud,
+} from "lucide-react";
 
 export default function About() {
   const skills = [
     {
       category: "Automation",
-      items: ["Selenium", "Virtuoso", "Java", "Cucumber", "Regression Testing"],
+      items: [
+        { name: "Selenium", icon: TestTube },
+        { name: "Virtuoso", icon: Bot },
+        { name: "Java", icon: Coffee },
+        { name: "Cucumber", icon: Cpu },
+        { name: "Regression Testing", icon: Bot },
+      ],
     },
     {
       category: "Performance Testing",
-      items: ["JMeter", "BlazeMeter", "Load Testing", "Stress Testing"],
+      items: [
+        { name: "JMeter", icon: Gauge },
+        { name: "BlazeMeter", icon: Rocket },
+        { name: "Load Testing", icon: Server },
+        { name: "Stress Testing", icon: Server },
+      ],
     },
     {
       category: "Tools & CI/CD",
-      items: ["Jenkins", "Git/GitHub", "API Testing", "Postman", "AWS"],
+      items: [
+        { name: "Jenkins", icon: Webhook },
+        { name: "Git/GitHub", icon: GitBranch },
+        { name: "API Testing", icon: Server },
+        { name: "Postman", icon: Webhook },
+        { name: "AWS", icon: Cloud },
+      ],
     },
   ];
 
@@ -113,14 +145,18 @@ export default function About() {
                         {skillGroup.category}
                       </h4>
                       <div className="flex flex-wrap gap-2">
-                        {skillGroup.items.map((skill, skillIndex) => (
-                          <span
-                            key={skillIndex}
-                            className="px-3 py-1 bg-primary/10 dark:bg-primary/20 text-primary rounded-full text-sm"
-                          >
-                            {skill}
-                          </span>
-                        ))}
+                        {skillGroup.items.map((skill, skillIndex) => {
+                          const Icon = skill.icon;
+                          return (
+                            <span
+                              key={skillIndex}
+                              className="px-3 py-1 bg-primary/10 dark:bg-primary/20 text-primary rounded-full text-sm flex items-center gap-2"
+                            >
+                              <Icon className="w-4 h-4" />
+                              {skill.name}
+                            </span>
+                          );
+                        })}
                       </div>
                     </div>
                   ))}
@@ -139,7 +175,6 @@ export default function About() {
                   <li>
                     Completed multiple certification courses in Test Automation
                   </li>
-                  {/* <li>Successfully implemented CI/CD pipelines reducing deployment time by 40%</li> */}
                 </ul>
               </div>
             </div>
