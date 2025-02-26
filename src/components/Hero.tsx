@@ -125,8 +125,6 @@ export default function Hero() {
                     2000,
                     "an Automation Tester",
                     2000,
-                    "a QA Engineer",
-                    2000,
                   ]}
                   wrapper="span"
                   speed={50}
