@@ -14,6 +14,7 @@ import {
   Rocket,
   Webhook,
   Cloud,
+  SearchCode,
 } from "lucide-react";
 
 export default function About() {
@@ -22,11 +23,11 @@ export default function About() {
       category: "Automation",
       items: [
         { name: "Selenium", icon: TestTube },
-        { name: "Virtuoso", icon: Bot },
+
         { name: "Java", icon: Coffee },
         { name: "Cucumber", icon: Cpu },
         { name: "Regression Testing", icon: Bot },
-        { name: "Smoke Testing", icon: TestTube },
+        { name: "Sanity Testing", icon: SearchCode },
       ],
     },
     {
@@ -42,6 +43,7 @@ export default function About() {
       category: "Tools & CI/CD",
       items: [
         { name: "Jenkins", icon: Webhook },
+        { name: "Virtuoso", icon: Bot },
         { name: "Git/GitHub", icon: GitBranch },
         { name: "API Testing", icon: Server },
         { name: "Postman", icon: Webhook },
