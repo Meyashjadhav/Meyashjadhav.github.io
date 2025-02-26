@@ -26,6 +26,7 @@ export default function About() {
         { name: "Java", icon: Coffee },
         { name: "Cucumber", icon: Cpu },
         { name: "Regression Testing", icon: Bot },
+        { name: "Smoke Testing", icon: TestTube },
       ],
     },
     {
